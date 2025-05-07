@@ -35,6 +35,7 @@ project/
 ├── index.html        # Frontend web interface
 ├── overlay_*.png     # Generated overlay images (after upload)
 └── README.md         # Project description and instructions
+```
 
 
 
@@ -45,4 +46,6 @@ project/
    ```bash
    pip install fastapi uvicorn pillow opencv-python tensorflow
 2. ** Run the fast api server using this command inside VS Code **
-   ```uvicorn main:app --reload```
+   ```
+   uvicorn main:app --reload
+   ```
