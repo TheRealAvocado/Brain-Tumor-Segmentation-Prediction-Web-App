@@ -50,4 +50,4 @@ project/
    uvicorn main:app --reload
    ```
 ## Results 
-![Result Image](overlay_1.png)
+![Result Image]([overlay_1.png](https://github.com/TheRealAvocado/Brain-Tumor-Segmentation-Prediction-Web-App/blob/main/backend/overlay_Image-17.png.png))
