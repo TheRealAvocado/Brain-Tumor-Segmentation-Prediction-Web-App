@@ -27,11 +27,9 @@ This project is a deep learning web application that segments brain tumors from 
 ---
 
 ## 📁 Project Structure
-  frontend 
-  backend
-  model.pkl
+  ```text project/ │ ├── main.py # FastAPI backend server ├── model.pkl # Trained segmentation model (pickle file) ├── index.html # Frontend web interface ├── overlay_*.png # Generated overlay images (after upload) └── README.md # Project description and instructions ```
 
----
+
 
 ## ⚙️ How to Run the Project
 
@@ -40,4 +38,4 @@ This project is a deep learning web application that segments brain tumors from 
    ```bash
    pip install fastapi uvicorn pillow opencv-python tensorflow
 2. ** Run the fast api server using this command inside VS Code **
-   ``` uvicorn main:app --reload
+   ```uvicorn main:app --reload
