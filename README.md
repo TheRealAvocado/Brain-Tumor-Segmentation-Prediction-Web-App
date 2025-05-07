@@ -27,7 +27,14 @@ This project is a deep learning web application that segments brain tumors from 
 ---
 
 ## 📁 Project Structure
-  ```text project/ │ ├── main.py # FastAPI backend server ├── model.pkl # Trained segmentation model (pickle file) ├── index.html # Frontend web interface ├── overlay_*.png # Generated overlay images (after upload) └── README.md # Project description and instructions ```
+ ```text
+project/
+│
+├── main.py           # FastAPI backend server
+├── model.pkl         # Trained segmentation model (pickle file)
+├── index.html        # Frontend web interface
+├── overlay_*.png     # Generated overlay images (after upload)
+└── README.md         # Project description and instructions
 
 
 
