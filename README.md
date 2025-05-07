@@ -1,2 +1,37 @@
-# Brain-Tumor-Segmentation-Prediction-Web-App
-This project uses a deep learning model to perform semantic segmentation of brain tumors from MRI scans. It features a simple frontend interface for uploading images and a FastAPI backend that handles model inference and response formatting.
+# 🧠 Brain Tumor Segmentation Web App
+
+This project is a deep learning web application that segments brain tumors from MRI images. It provides a user-friendly frontend for uploading brain scans and a FastAPI-powered backend that runs a trained AI model to predict and visualize tumor regions.
+
+---
+
+## 🚀 Features
+
+- Upload one or multiple brain MRI images (`.png`)
+- Real-time prediction using a trained segmentation model
+- Highlights tumor areas on the original scan using overlays
+- Displays whether cancer is detected
+- Saves result images locally for inspection
+- Frontend and backend are connected using FastAPI and JavaScript (fetch API)
+
+---
+
+## 🛠️ Technologies Used
+
+- **FastAPI** – for building the backend server
+- **TensorFlow / Keras** – for loading and using the segmentation model
+- **OpenCV** – for image overlay and processing
+- **JavaScript** – for frontend logic and communication
+- **HTML/CSS** – for the web interface
+- **Uvicorn** – ASGI server to run FastAPI
+
+---
+
+## 📁 Project Structure
+
+project/
+│
+├── main.py # FastAPI backend server
+├── model.pkl # Trained segmentation model (pickle file)
+├── index.html # Frontend web interface
+├── overlay_*.png # Generated overlay images (after upload)
+└── README.md
