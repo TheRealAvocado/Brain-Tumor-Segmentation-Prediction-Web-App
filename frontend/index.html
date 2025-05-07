@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumor Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #predict-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #predict-btn:hover {
+            background-color: #45a049;
+        }
+
+        #uploaded-image {
+            max-width: 400px;
+            margin-top: 20px;
+            display: block;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #prediction-result {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            #uploaded-image {
+                max-width: 100%;
+            }
+
+            #predict-btn {
+                width: 100%;
+                padding: 15px;
+            }
+
+            input[type="file"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Upload PNG Image to Detect Tumor</h1>
+    <input type="file" id="upload" accept="image/png" multiple />
+    <br />
+    <form id="image-form" onsubmit="event.preventDefault()">
+        <button id="predict-btn">Predict</button>
+    </form>
+
+    <!-- <h2>Uploaded Image:</h2>
+    <img id="uploaded-image" alt="Uploaded Image" /> -->
+
+    <h2>Prediction Result:</h2>
+    <p id="prediction-result">No result yet.</p>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
