@@ -38,4 +38,4 @@ This project is a deep learning web application that segments brain tumors from 
    ```bash
    pip install fastapi uvicorn pillow opencv-python tensorflow
 2. ** Run the fast api server using this command inside VS Code **
-   ```uvicorn main:app --reload
+   ```uvicorn main:app --reload```
